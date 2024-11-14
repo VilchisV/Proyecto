@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import random
 import os
+from PIL import Image
+from io import BytesIO
 from ejecutivo import Ejecutivo  # Asegúrate de tener la clase Ejecutivo en este archivo
 from ventas import Ventas
 from inventario import Inventario

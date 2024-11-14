@@ -200,9 +200,9 @@ st.sidebar.title("Menú Principal")
 st.markdown("<h1 style='text-align: center;'>Universidad Nacional Autónoma de México</h1>", unsafe_allow_html=True)
 st.write("\t ## Matemáticas Aplicadas y Computación")
 # URLs de las imágenes en formato raw de GitHub
-image_url1 = "https://raw.githubusercontent.com/VilchisV/Proyecto/dev/Logo.png"
+image_url1 = "https://raw.githubusercontent.com/VilchisV/Proyecto/main/Logo.png"
 
-image_url2 = "https://raw.githubusercontent.com/VilchisV/Proyecto/dev/UNAM.png"
+image_url2 = "https://raw.githubusercontent.com/VilchisV/Proyecto/main/UNAM.png"
 
 # Definir las columnas con diferentes anchos
 col_uno, col_dos = st.columns([1, 2], gap="small")

@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import random
 import os
+from PIL import Image
+from io import BytesIO
 from ejecutivo import Ejecutivo  # Asegúrate de tener la clase Ejecutivo en este archivo
 from ventas import Ventas
 from inventario import Inventario
@@ -195,6 +197,41 @@ def iniciar_sesion(correo, contrasenia):
 
 # Streamlit App
 st.sidebar.title("Menú Principal")
+st.markdown("<h1 style='text-align: center;'>Universidad Nacional Autónoma de México</h1>", unsafe_allow_html=True)
+st.write("\t ## Matemáticas Aplicadas y Computación")
+# URLs de las imágenes en formato raw de GitHub
+image_url1 = "https://raw.githubusercontent.com/VilchisV/Proyecto/52164f904981ac597e7509b5cd6c902bda8645e2/Logo.png"
+image_url2 = "https://raw.githubusercontent.com/VilchisV/Proyecto/616913eb69ffb031c8509eb6ed48aec2696375b7/UNAM.png"
+
+# Definir las columnas con diferentes anchos
+col_uno, col_dos = st.columns([1, 2], gap="small")
+
+# Contenido de la primera columna
+with col_uno:
+# Agregar una imagen en la primera columna desde una URL
+    st.image(image_url1)
+
+# Agregar el texto en la primera columna
+st.write("## CAPYCODE ")
+
+# Contenido de la segunda columna
+with col_dos:
+# Agregar una imagen en la segunda columna desde una URL
+    st.image(image_url2, width=170, caption=None)
+
+# Agregar el texto en la segunda columna
+st.info(
+    "### Desarrolladores:\n"
+    "- Alcantar Hernandez Jessica Esmeralda \n"
+    "- Vilchis López Víctor Manuel\n"
+    "- Guevara Moysen Jorge Isaac\n"
+    "- Enríquez Sánchez Joshua Antonio",
+    icon="ℹ️"
+)
+
+
+
+
 if 'usuario_logueado' in st.session_state:
     submenu_opcion = st.sidebar.radio("Selecciona una opción:", ["Gestionar Inventario", "Registrar Venta", "Historial de Ventas", "Gestionar Clientes", "Cerrar Sesión"])
     

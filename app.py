@@ -201,7 +201,7 @@ st.markdown("<h1 style='text-align: center;'>Universidad Nacional Autónoma de M
 st.write("\t ## Matemáticas Aplicadas y Computación")
 # URLs de las imágenes en formato raw de GitHub
 image_url1 = "https://raw.githubusercontent.com/VilchisV/Proyecto/main/Logo.png"
-image_url2 = "https://raw.githubusercontent.com/VilchisV/Proyecto/main/UNAM.png"
+image_url2 = "https://raw.githubusercontent.com/AaMRosas/metodos/main/UNAM.png"
 
 # Definir las columnas con diferentes anchos
 col_uno, col_dos = st.columns([1, 2], gap="small")
